@@ -2,36 +2,46 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Mondorian Composition II</title>
+    <title>Mondrian Composition II</title>
     <style>
-        .container{
-            width:13cm;
-            height:13cm;
-            border:1px solid black;
+        .container {
+            width: 13cm;
+            height: 13cm;
+            border: 1px solid black;
             display: grid;
             grid-template-columns: 6fr 17fr 2fr;
-            grid-template-rows: 4fr 5fr 3fr;
+            grid-template-rows: 8fr 10fr 3fr 3fr;
         }
-        .item{
-            border:1px solid black;
+        .item {
+            border: 1px solid black;
         }
-        #2{
-            color: red;
-            grid-column:span 2;
-            grid-row:span 2;
+        #item2 {
+            background-color: red;
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+        #item4 {
+            background-color: blue;
+            grid-row: span 2;
+        }
+        #item5 {
+            grid-row: span 2;
+        }
+        #item6 {
+            background-color: yellow;
         }
     </style>
 </head>
 <body>
-    <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Piet_Mondriaan%2C_1930_-_Mondrian_Composition_II_in_Red%2C_Blue%2C_and_Yellow.jpg/800px-Piet_Mondriaan%2C_1930_-_Mondrian_Composition_II_in_Red%2C_Blue%2C_and_Yellow.jpg">Original Image</a>
-    <div class="container">
-        <div class="item" id="1">1</div>
-        <div class="item" id="2">2</div>
-        <div class="item" id="3">3</div>
-        <div class="item" id="4">4</div>
-        <div class="item" id="5">5</div>
-        <div class="item" id="6">6</div>
-        <div class="item" id="7">7</div>
-    </div>
+<div class="container">
+    <div class="item" id="item1"></div>
+    <div class="item" id="item2"></div>
+    <div class="item" id="item3"></div>
+    <div class="item" id="item4"></div>
+    <div class="item" id="item5"></div>
+    <div class="item" id="item6"></div>
+    <div class="item" id="item7"></div>
+</div>
+<a href="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Piet_Mondriaan%2C_1930_-_Mondrian_Composition_II_in_Red%2C_Blue%2C_and_Yellow.jpg/800px-Piet_Mondriaan%2C_1930_-_Mondrian_Composition_II_in_Red%2C_Blue%2C_and_Yellow.jpg">Original Image</a>
 </body>
 </html>
